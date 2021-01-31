@@ -29,7 +29,7 @@ static char message[] = "Reponse de pid                            \n";
 void Gerant_Comm(void);
 
 
-int main (void)
+int main (int argc, char argv[] )
 {
   int Sock_Serv;
   struct sockaddr_in Le_Serveur;

@@ -5,6 +5,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <string.h>
 
 void printconnerror()
 {
@@ -45,7 +46,7 @@ int main(int argc, char * argv[])
     exit(1);
   }
 
-  for (i=0; i<100; i++) buf[i] = '\0';
+  for (i=0; i<200; i++) buf[i] = '\0';
   read(sockfd, buf, 99);
   printf("string read = %s\n", buf);
   return 0;
