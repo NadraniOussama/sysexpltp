@@ -27,7 +27,7 @@ int main(int argc, char * argv[])
 
   if (argc < 3) {
     printf("Usage: a.out ip_addr port.\n");
-    exit(0);
+    exit(0); 
   }
 
   if ((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
